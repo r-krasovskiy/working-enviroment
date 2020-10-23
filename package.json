@@ -4,7 +4,12 @@
   "description": "Browser based game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "start": "live-server src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/roman-krasowski/working-enviroment/issues"
   },
-  "homepage": "https://github.com/roman-krasowski/working-enviroment#readme"
-}
+  "homepage": "https://github.com/roman-krasowski/working-enviroment#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  } 
+} 
